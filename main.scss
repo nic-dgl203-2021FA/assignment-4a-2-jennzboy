@@ -1,6 +1,12 @@
 @import './resets';
 @import './variable';
 
+@mixin blockStyling {
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
   body {
     background-color: $primary-color;
     font-family: $font-family;
