@@ -23,21 +23,40 @@ body {
 header {
   grid-area: title;
 }
+header .page-heading {
+  margin-top: 20px;
+  color: #F7F7F2;
+}
 
 nav {
   grid-area: nav;
 }
-
-.main {
-  grid-area: main;
+nav .site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0.5em;
+  background-color: #E4E6C3;
+  list-style-type: none;
+  border-radius: 0.2em;
 }
-
-.sidebar-top {
-  grid-area: aside1;
+nav li {
+  margin-top: 0;
 }
-
-.sidebar-bottom {
-  grid-area: aside2;
+nav li + li {
+  margin-left: 1.5em;
+}
+nav a {
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #899878;
+  color: #F7F7F2;
+}
+nav .nav-right {
+  margin-left: auto;
 }
 
 .tile {
@@ -52,40 +71,18 @@ nav {
   margin-top: 1.5em;
 }
 
-.page-heading {
-  margin-top: 20px;
-  color: #F7F7F2;
+.centered {
+  text-align: center;
 }
 
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  padding: 0.5em;
-  background-color: #E4E6C3;
-  list-style-type: none;
-  border-radius: 0.2em;
-}
-.site-nav li {
-  margin-top: 0;
-}
-.site-nav li + li {
-  margin-left: 1.5em;
-}
-.site-nav a {
-  display: block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  border-radius: 5px;
-  background-color: #899878;
-  color: #F7F7F2;
-}
-.site-nav .nav-right {
-  margin-left: auto;
+.main {
+  grid-area: main;
 }
 
-.login-form h3 {
+.sidebar-top {
+  grid-area: aside1;
+}
+.sidebar-top h3 {
   margin: 0;
   font-size: 0.9em;
   font-weight: bold;
@@ -93,7 +90,7 @@ nav {
   text-transform: uppercase;
   color: #222725;
 }
-.login-form button {
+.sidebar-top button {
   margin-top: 1em;
   border: 2px solid #899878;
   border-radius: 5px;
@@ -101,17 +98,16 @@ nav {
   padding: 0.5em 1em;
   cursor: pointer;
 }
-.login-form input:not([type=checkbox]):not([type=radio]) {
+.sidebar-top input:not([type=checkbox]):not([type=radio]) {
   display: block;
   margin-top: 0;
   width: 100%;
 }
 
-.centered {
-  text-align: center;
+.sidebar-bottom {
+  grid-area: aside2;
 }
-
-.cost {
+.sidebar-bottom .cost {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,22 +120,21 @@ nav {
   line-height: 0.7;
   color: #222725;
 }
-.cost span {
+.sidebar-bottom span {
   margin-top: 0;
 }
-.cost .cost-currency {
+.sidebar-bottom .cost-currency {
   font-size: 2rem;
 }
-.cost .cost-dollars {
+.sidebar-bottom .cost-dollars {
   font-size: 4rem;
 }
-.cost .cost-cents {
+.sidebar-bottom .cost-cents {
   font-size: 1.5rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-
-.cta-button {
+.sidebar-bottom .cta-button {
   display: block;
   padding: 0.5em 1em;
   text-decoration: none;
