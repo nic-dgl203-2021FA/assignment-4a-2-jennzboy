@@ -78,13 +78,17 @@ nav {
   }
 }
 
-.site-nav {
+nav {
+  grid-area: nav;
+
+  .site-nav {
   display: flex;
   margin: 0;
   padding: 0.5em;
   background-color: $accent-color2;
   list-style-type: none;
   border-radius: 0.2em;
+  }
 
   li {
     margin-top: 0;
