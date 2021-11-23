@@ -115,12 +115,12 @@ nav {
 
   button {
     margin-top: 1em;
-    border: 2px solid $accent-color1;
+    @include borderStroke(medium);
     background-color: $accent-color2;
     padding: 0.5em 1em;
     cursor: pointer;
   }
-  
+
   input:not([type="checkbox"]):not([type="radio"]) {
     display: block;
     margin-top: 0;
