@@ -90,31 +90,30 @@
     }
 }
 
+  .login-form {
+      h3 {
+        margin: 0;
+        font-size: .9em;
+        font-weight: bold;
+        text-align: right;
+        text-transform: uppercase;
+        color: $text-color;
+      }
+
+    button {
+        margin-top: 1em;
+        border: 2px solid $accent-color1;
+        background-color: $accent-color2;
+        padding: .5em 1em;
+        cursor: pointer;
+    }
+    input:not([type=checkbox]):not([type=radio]) {
+        display: block;
+        margin-top: 0;
+        width: 100%;
+    }
     
-
-  .login-form h3 {
-    margin: 0;
-    font-size: .9em;
-    font-weight: bold;
-    text-align: right;
-    text-transform: uppercase;
-    color: $text-color;
   }
-
-  .login-form input:not([type=checkbox]):not([type=radio]) {
-    display: block;
-    margin-top: 0;
-    width: 100%;
-  }
-
-  .login-form button {
-    margin-top: 1em;
-    border: 2px solid $accent-color1;
-    background-color: $accent-color2;
-    padding: .5em 1em;
-    cursor: pointer;
-  }
-
   .centered {
     text-align: center;
   }
