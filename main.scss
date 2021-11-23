@@ -7,6 +7,9 @@
   text-decoration: none;
 }
 
+@mixin borderStroke($val) {
+  }
+
 body {
   background-color: $primary-color;
   font-family: $font-family;
