@@ -74,9 +74,9 @@ nav {
 .site-nav > li > a {
   display: block;
   padding: 0.5em 1em;
+  text-decoration: none;
   background-color: #899878;
   color: #F7F7F2;
-  text-decoration: none;
 }
 
 .site-nav > li + li {
@@ -147,9 +147,9 @@ nav {
 
 .cta-button {
   display: block;
-  background-color: #899878;
-  color: #F7F7F2;
   padding: 0.5em 1em;
   text-decoration: none;
+  background-color: #899878;
+  color: #F7F7F2;
 }
 /*# sourceMappingURL=main.css.map */

@@ -140,9 +140,7 @@
   }
 
   .cta-button {
-    display: block;
+    @include blockStyling;
     background-color: $accent-color1;
     color: $secondary-color;
-    padding: .5em 1em;
-    text-decoration: none;
   }
