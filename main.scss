@@ -70,25 +70,27 @@
     background-color: $accent-color2;
     list-style-type: none;
     border-radius: .2em;
-  }
 
-  .site-nav > li {
-    margin-top: 0;
-  }
+    li {
+        margin-top: 0;  
+    }
 
-  .site-nav > li > a {
-    @include blockStyling;
-    background-color: $accent-color1;
-    color: $secondary-color;
-  }
+    li + li {
+        margin-left: 1.5em;
+    }
 
-  .site-nav > li + li {
-    margin-left: 1.5em;
-  }
+    a {
+        @include blockStyling;
+        background-color: $accent-color1;
+        color: $secondary-color;  
+    }
 
-  .site-nav > .nav-right {
-    margin-left: auto;
-  }
+    .nav-right {
+        margin-left: auto;
+    }
+}
+
+    
 
   .login-form h3 {
     margin: 0;
