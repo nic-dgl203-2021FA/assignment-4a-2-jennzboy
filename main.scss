@@ -95,6 +95,7 @@ nav {
 
   a {
     @include blockStyling;
+    border-radius: 5px;
     background-color: $accent-color1;
     color: $secondary-color;
   }
@@ -117,6 +118,7 @@ nav {
   button {
     margin-top: 1em;
     @include borderStroke(medium);
+    border-radius: 5px;
     background-color: $accent-color2;
     padding: 0.5em 1em;
     cursor: pointer;
@@ -160,6 +162,7 @@ nav {
 .cta-button {
   @include blockStyling;
   @include borderStroke(light);
+  border-radius: 5px;
   background-color: $accent-color1;
   color: $secondary-color;
 }
