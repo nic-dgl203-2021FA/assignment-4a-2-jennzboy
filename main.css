@@ -120,20 +120,16 @@ nav {
           align-items: center;
   line-height: 0.7;
 }
-
-.cost > span {
+.cost span {
   margin-top: 0;
 }
-
-.cost-currency {
+.cost .cost-currency {
   font-size: 2rem;
 }
-
-.cost-dollars {
+.cost .cost-dollars {
   font-size: 4rem;
 }
-
-.cost-cents {
+.cost .cost-cents {
   font-size: 1.5rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
