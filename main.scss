@@ -2,8 +2,8 @@
 @import './variable';
 
   body {
-    font-family: Helvetica, Arial, sans-serif;
     background-color: $primary-color;
+    font-family: $font-family;
   }
 
   .container {
