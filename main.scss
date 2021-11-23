@@ -11,6 +11,9 @@
     @if $val == light {
       border: 1px solid $accent-color2;
     }
+    @else if $val == medium {
+      border: 2px solid $accent-color1;
+    }
   }
 
 body {
