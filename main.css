@@ -139,6 +139,7 @@ nav {
   display: block;
   padding: 0.5em 1em;
   text-decoration: none;
+  border: 1px solid #E4E6C3;
   background-color: #899878;
   color: #F7F7F2;
 }

@@ -157,6 +157,7 @@ nav {
 
 .cta-button {
   @include blockStyling;
+  @include borderStroke(light);
   background-color: $accent-color1;
   color: $secondary-color;
 }
